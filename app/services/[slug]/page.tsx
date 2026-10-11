@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ArrowLeft, ArrowUpRight, Check } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { ApproachSection, CtaBanner } from "@/components/shared"
 import { services } from "@/lib/site-data"
 
@@ -52,7 +51,7 @@ export default async function ServiceDetailPage({
           <h1 className="mt-6 max-w-3xl text-balance font-serif text-4xl font-semibold leading-tight md:text-5xl">
             {service.title}
           </h1>
-          <p className="mt-4 max-w-2xl text-pretty text-base leading-relaxed text-accent md:text-lg">
+          <p className="mt-4 max-w-2xl text-pretty text-base leading-relaxed text-secondary md:text-lg">
             {service.tagline}
           </p>
           <p className="mt-5 max-w-2xl text-pretty leading-relaxed text-primary-foreground/75">
@@ -68,8 +67,7 @@ export default async function ServiceDetailPage({
               What we cover
             </h2>
             <p className="mt-3 max-w-xl leading-relaxed text-muted-foreground">
-              An end-to-end scope across {service.title.toLowerCase()}, delivered with senior-level
-              engagement and hands-on execution support.
+              The following topics may be covered, depending on the matter and agreed engagement scope.
             </p>
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {service.points.map((point) => (
@@ -85,23 +83,7 @@ export default async function ServiceDetailPage({
           </div>
 
           <aside className="lg:sticky lg:top-28 lg:self-start">
-            <div className="rounded-lg border border-border bg-secondary p-7">
-              <h3 className="font-serif text-xl font-semibold text-foreground">
-                Discuss your requirement
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                Speak with a senior advisor about how {service.title.toLowerCase()} applies to your
-                specific transaction.
-              </p>
-              <Button asChild className="mt-6 w-full rounded-sm">
-                <Link href="/contact">Book a Consultation</Link>
-              </Button>
-              <Button asChild variant="outline" className="mt-3 w-full rounded-sm bg-transparent">
-                <Link href="/contact">Talk to an Expert</Link>
-              </Button>
-            </div>
-
-            <div className="mt-6 rounded-lg border border-border bg-card p-7">
+            <div className="rounded-2xl border border-border bg-card p-7">
               <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-muted-foreground">
                 Related services
               </h3>

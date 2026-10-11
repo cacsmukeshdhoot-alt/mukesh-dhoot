@@ -3,12 +3,10 @@ import {
   Globe,
   Handshake,
   Ship,
-  LineChart,
   CreditCard,
   FileCheck,
   Users,
   Rocket,
-  Building2,
   Landmark,
 } from "lucide-react"
 
@@ -33,9 +31,9 @@ export const services: Service[] = [
     slug: "fema-advisory",
     title: "FEMA Advisory",
     icon: Globe,
-    tagline: "Structuring inbound and outbound investment with certainty",
+    tagline: "Advice on inbound and outbound investment matters",
     summary:
-      "End-to-end advisory on FEMA-regulated transactions — from foreign direct investment and overseas investment to capital restructuring and RBI approvals.",
+      "Advice on FEMA-regulated transactions, including FDI, overseas investment, capital restructuring and RBI applications where applicable.",
     points: [
       "Inbound Investments (FDI)",
       "Outbound Investments (ODI)",
@@ -46,7 +44,7 @@ export const services: Service[] = [
       "Buyback",
       "Pricing guidelines",
       "Compounding",
-      "RBI approvals",
+      "RBI applications",
       "Regulatory opinions",
     ],
   },
@@ -54,9 +52,9 @@ export const services: Service[] = [
     slug: "cross-border-ma",
     title: "Cross-Border M&A",
     icon: Handshake,
-    tagline: "From deal thesis to regulatory close",
+    tagline: "Advice on inbound and outbound acquisitions",
     summary:
-      "Commercially grounded transaction structuring for inbound and outbound acquisitions, backed by execution support across the deal lifecycle.",
+      "Advice on transaction structuring for inbound and outbound acquisitions, subject to the agreed scope.",
     points: [
       "Inbound acquisitions",
       "Outbound acquisitions",
@@ -73,9 +71,9 @@ export const services: Service[] = [
     slug: "international-trade-advisory",
     title: "International Trade Advisory",
     icon: Ship,
-    tagline: "Trade that moves, documented and compliant",
+    tagline: "Advice on international trade matters",
     summary:
-      "Advisory across the trade cycle — import-export, merchant trade, documentation, remittances and trade compliance — designed to keep goods and money moving.",
+      "Advice on import-export, merchant trade, documentation, remittances and applicable trade requirements.",
     points: [
       "Import-export advisory",
       "Trade transactions",
@@ -91,11 +89,11 @@ export const services: Service[] = [
       "Trade risk management",
     ],
   },
-    {
+  {
     slug: "cross-border-payments",
     title: "Cross-Border Payments",
     icon: CreditCard,
-    tagline: "Faster, cleaner international money movement",
+    tagline: "Advice on cross-border payments",
     summary:
       "Payment and collection architecture for global operations — virtual accounts, cash management, escrow and optimisation of cross-border flows.",
     points: [
@@ -113,9 +111,9 @@ export const services: Service[] = [
     slug: "rbi-compliance",
     title: "RBI Compliance",
     icon: FileCheck,
-    tagline: "Reporting, filings and representation — handled",
+    tagline: "Assistance with RBI filings and submissions",
     summary:
-      "Accurate, timely regulatory filings and representation before the RBI, including compounding and regularisation of past transactions.",
+      "Assistance with RBI filings and submissions, including eligible compounding or regularisation matters, subject to requirements and RBI processes.",
     points: [
       "FC-GPR",
       "FC-TRS",
@@ -133,7 +131,7 @@ export const services: Service[] = [
     slug: "nri-advisory",
     title: "NRI Advisory",
     icon: Users,
-    tagline: "Cross-border wealth, simplified for NRIs",
+    tagline: "Advice on cross-border matters for NRIs",
     summary:
       "Advisory for non-resident individuals and families on accounts, repatriation, investments, property and inter-generational transfers.",
     points: [
@@ -151,7 +149,7 @@ export const services: Service[] = [
     slug: "startup-investor-advisory",
     title: "Startup & Investor Advisory",
     icon: Rocket,
-    tagline: "Fundraising and structuring built for global capital",
+    tagline: "Advice on fundraising and structuring matters",
     summary:
       "Support for founders and investors on foreign investment, instrument structuring, holding structures and exit planning.",
     points: [
@@ -166,15 +164,15 @@ export const services: Service[] = [
       "Investor onboarding",
     ],
   },
-    {
+  {
     slug: "banking-advisory",
     title: "Banking Advisory",
     icon: Landmark,
-    tagline: "Helping corporates work effectively with banks",
+    tagline: "Advice on banking facilities and related documentation",
     summary:
-      "Leveraging deep banking relationships to help corporates secure the right facilities, products and documentation for global operations.",
+      "Advice on banking facilities, products and documentation for global operations.",
     points: [
-      "Opening banking relationships",
+      "Banking facilities",
       "Trade facilities",
       "Cross-border transaction support",
       "Regulatory documentation",
@@ -219,40 +217,16 @@ export const industries = [
 
 export const whyChooseUs = [
   {
-    title: "20+ years of banking leadership",
-    body: "Senior leadership roles across leading global and Indian banks inform every recommendation we make.",
+    title: "Founder experience",
+    body: "Founder Mukesh Dhoot has more than 20 years of banking and cross-border transaction experience, including roles at Citibank, ICICI Bank and YES BANK.",
   },
   {
-    title: "Hands-on transaction execution",
-    body: "We have structured and executed complex cross-border transactions — not just advised on them.",
+    title: "Bank and transaction coordination",
+    body: "Experience coordinating with banks, treasury teams and trade teams, where relevant.",
   },
   {
-    title: "Strategic business advisory",
-    body: "We think like your business partner first and a regulatory expert second.",
-  },
-  {
-    title: "Regulatory expertise",
-    body: "Deep, current command of FEMA, RBI regulations and international trade frameworks.",
-  },
-  {
-    title: "Commercial understanding",
-    body: "Structures that stand up to regulators while protecting your commercial intent.",
-  },
-  {
-    title: "Strong banking ecosystem knowledge",
-    body: "Relationships and know-how across banks, treasury desks and trade teams.",
-  },
-  {
-    title: "Practical solutions",
-    body: "Clear, actionable advice — no jargon, no theory that cannot be executed.",
-  },
-  {
-    title: "Senior-level engagement",
-    body: "You work directly with senior advisors throughout the engagement.",
-  },
-  {
-    title: "Trusted advisor approach",
-    body: "Long-term relationships built on discretion, judgement and reliability.",
+    title: "Advice on transaction structures",
+    body: "Advice on structures that consider applicable requirements and commercial objectives.",
   },
 ]
 
@@ -265,27 +239,27 @@ export const approach = [
   {
     step: "02",
     title: "Identify regulatory implications",
-    body: "We map every FEMA, RBI and trade implication before a structure is proposed.",
+    body: "We assess relevant FEMA, RBI and trade implications before a structure is proposed.",
   },
   {
     step: "03",
     title: "Design practical structures",
-    body: "We build structures that are compliant, efficient and executable in the real world.",
+    body: "Advice on structures that consider applicable requirements and commercial objectives.",
   },
   {
     step: "04",
     title: "Coordinate with stakeholders",
-    body: "We align banks, lawyers, auditors and counterparties around a single plan.",
+    body: "Coordination with banks, lawyers, auditors and counterparties may form part of an agreed engagement.",
   },
   {
     step: "05",
     title: "Support execution",
-    body: "We stay hands-on through documentation, filings and closing.",
+    body: "Support with documentation, filings and transaction processes may form part of an agreed engagement.",
   },
   {
     step: "06",
-    title: "Ensure ongoing compliance",
-    body: "We keep you compliant after the deal with reporting and periodic reviews.",
+    title: "Ongoing reporting assistance",
+    body: "Assistance with applicable reporting and periodic reviews, subject to requirements.",
   },
 ]
 
@@ -393,12 +367,12 @@ export const faqs: Faq[] = [
   { group: "FDI", q: "What is the difference between the automatic and approval routes?", a: "Under the automatic route no prior government approval is required, only post-investment reporting. The approval route requires prior clearance from the relevant administrative ministry before the investment is made." },
   { group: "FDI", q: "What are pricing guidelines for FDI?", a: "Shares issued or transferred between residents and non-residents must comply with RBI pricing guidelines, which set a floor or cap based on a valuation by a registered valuer or internationally accepted methodology." },
   { group: "FDI", q: "Which reporting is required after receiving FDI?", a: "Form FC-GPR must be filed on the RBI FIRMS portal for allotment of shares, and Form FC-TRS for transfers between residents and non-residents, within prescribed timelines." },
-  { group: "FDI", q: "Can a foreign investor invest in any sector?", a: "Most sectors are open, but some are prohibited (such as lottery and chit funds) and others are capped or conditional. We map your target sector against the current FDI Policy before you commit." },
+  { group: "FDI", q: "Can a foreign investor invest in any sector?", a: "Most sectors are open, but some are prohibited (such as lottery and chit funds) and others are capped or conditional. The target sector can be assessed against current FDI policy before investment." },
 
   // ODI
   { group: "ODI", q: "What is ODI?", a: "Overseas Direct Investment is investment by an Indian entity or resident individual in a foreign entity, through equity, loans or guarantees, governed by the Overseas Investment Rules and Regulations." },
   { group: "ODI", q: "What is the difference between ODI and OPI?", a: "ODI generally involves control or strategic stake and unlisted equity, while Overseas Portfolio Investment (OPI) covers investment in listed foreign securities without control. The route and reporting differ for each." },
-  { group: "ODI", q: "What approvals are needed for outbound investment?", a: "Most ODI is under the automatic route within financial commitment limits. Approval route transactions and certain structures require prior RBI approval, which we help you obtain." },
+  { group: "ODI", q: "What approvals are needed for outbound investment?", a: "Most ODI is under the automatic route within financial commitment limits. Approval route transactions and certain structures require prior RBI approval, depending on current requirements and the transaction structure." },
   { group: "ODI", q: "What is the Annual Performance Report (APR)?", a: "The APR is an annual filing that Indian investors must submit for each foreign entity in which they hold ODI, based on audited financials, reporting performance and repatriations." },
   { group: "ODI", q: "Can an Indian resident individual make ODI?", a: "Yes, resident individuals can make ODI within the Liberalised Remittance Scheme limit, subject to conditions on the nature of the foreign entity and its activities." },
 
@@ -411,8 +385,8 @@ export const faqs: Faq[] = [
   // FEMA
   { group: "FEMA", q: "What is FEMA?", a: "The Foreign Exchange Management Act, 1999 is the framework governing foreign exchange transactions, cross-border investment, trade and payments in India." },
   { group: "FEMA", q: "What is the difference between a current and capital account transaction?", a: "Current account transactions relate to trade and services and are generally permitted, while capital account transactions affect assets and liabilities and are permitted only as specified under FEMA." },
-  { group: "FEMA", q: "What happens if there is a FEMA contravention?", a: "Contraventions can be regularised through compounding with the RBI, which involves an application, a hearing and payment of a compounding amount. We prepare and represent such applications." },
-  { group: "FEMA", q: "Do I need a FEMA advisor if my CA already files returns?", a: "Filings are one part of the picture. We focus on structuring the transaction correctly upfront so that filings are straightforward and defensible, and we coordinate with your CA and CS." },
+  { group: "FEMA", q: "What happens if there is a FEMA contravention?", a: "Contraventions can be regularised through compounding with the RBI, which involves an application, a hearing and payment of a compounding amount. Compounding is subject to the RBI process and applicable requirements." },
+  { group: "FEMA", q: "Do I need a FEMA advisor if my CA already files returns?", a: "Filings are one part of the picture. Advice may cover transaction structuring and coordination with CA or CS professionals, depending on the agreed scope." },
 
   // Trade
   { group: "Trade", q: "What documents are essential for cross-border trade?", a: "Typical documents include the commercial invoice, packing list, bill of lading or airway bill, bill of entry or shipping bill, and any regulatory certificates relevant to the goods." },
@@ -445,25 +419,25 @@ export const faqs: Faq[] = [
   // NRI
   { group: "NRI", q: "What is the difference between NRE and NRO accounts?", a: "NRE accounts hold foreign earnings, are fully repatriable and tax-free in India, while NRO accounts hold income earned in India, are subject to Indian tax and have repatriation limits." },
   { group: "NRI", q: "How much can an NRI repatriate from India?", a: "NRIs can repatriate up to USD 1 million per financial year from their NRO account balances, subject to documentation and tax compliance, in addition to freely repatriable NRE funds." },
-  { group: "NRI", q: "Can NRIs invest in Indian property and businesses?", a: "NRIs can invest in most residential and commercial property and in Indian companies under FEMA, subject to sectoral and repatriation conditions that we help you navigate." },
+  { group: "NRI", q: "Can NRIs invest in Indian property and businesses?", a: "NRIs can invest in most residential and commercial property and in Indian companies under FEMA, subject to applicable sectoral and repatriation conditions." },
   { group: "NRI", q: "How are gifts and inheritance handled for NRIs?", a: "Gifts and inheritances involving non-residents are permitted under FEMA within specified conditions, and require careful structuring to manage repatriation and tax outcomes." },
 
   // RBI approvals
   { group: "RBI Approvals", q: "When is prior RBI approval required?", a: "Prior approval is needed for transactions outside the automatic route — certain ODI structures, specific FDI cases, and transactions that fall outside prescribed limits or conditions." },
-  { group: "RBI Approvals", q: "How long does an RBI approval take?", a: "Timelines vary with the nature of the transaction and completeness of the application. A well-prepared submission with full supporting documents significantly reduces back-and-forth." },
+  { group: "RBI Approvals", q: "How long does an RBI approval take?", a: "Timelines depend on the matter, application details and RBI processes." },
   { group: "RBI Approvals", q: "What is a regulatory opinion and when do I need one?", a: "A regulatory opinion is a written assessment of whether and how a transaction can be structured under FEMA. It is valuable before large or novel transactions to de-risk execution." },
 
   // Compounding
   { group: "Compounding", q: "What is compounding under FEMA?", a: "Compounding is a voluntary process to regularise a contravention of FEMA by applying to the RBI, admitting the contravention and paying a compounding amount to settle it." },
   { group: "Compounding", q: "When should I apply for compounding?", a: "As soon as a contravention is identified. Voluntary, prompt disclosure generally leads to a smoother process than waiting for the issue to be raised during a review or filing." },
-  { group: "Compounding", q: "How is the compounding amount determined?", a: "The RBI applies a published matrix based on the nature and amount of the contravention and the period involved. We estimate exposure and present the application to support a fair outcome." },
+  { group: "Compounding", q: "How is the compounding amount determined?", a: "The RBI applies a published matrix based on the nature and amount of the contravention and the period involved. The applicable amount depends on the facts and RBI process." },
 
   // Reporting
   { group: "Reporting", q: "What is Form FC-GPR?", a: "FC-GPR reports the issue of shares by an Indian company to a non-resident and must be filed on the RBI FIRMS portal within the prescribed period from allotment." },
   { group: "Reporting", q: "What is Form FC-TRS?", a: "FC-TRS reports the transfer of shares between a resident and a non-resident, and is filed on the FIRMS portal within the prescribed timeline from the transfer." },
   { group: "Reporting", q: "What is the FLA return?", a: "The Foreign Liabilities and Assets return is an annual filing by entities that have received FDI or made ODI, reporting their foreign assets and liabilities to the RBI." },
-  { group: "Reporting", q: "What happens if I miss a reporting deadline?", a: "Late or missed filings can amount to a FEMA contravention, which may need to be regularised through compounding. We help you file correctly and, where needed, regularise past lapses." },
-  { group: "Reporting", q: "Do startups have special reporting considerations?", a: "Startups raising foreign investment through instruments such as CCPS or convertible notes have specific reporting and pricing considerations that we handle end-to-end." },
+  { group: "Reporting", q: "What happens if I miss a reporting deadline?", a: "Late or missed filings can amount to a FEMA contravention, which may need to be regularised through compounding. Available options depend on current requirements and the facts." },
+  { group: "Reporting", q: "Do startups have special reporting considerations?", a: "Startups raising foreign investment through instruments such as CCPS or convertible notes have specific reporting and pricing considerations that depend on the transaction and current requirements." },
 ]
 
 export const faqGroups = Array.from(new Set(faqs.map((f) => f.group)))

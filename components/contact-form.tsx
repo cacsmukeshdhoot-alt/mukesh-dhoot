@@ -23,8 +23,7 @@ export function ContactForm() {
         <CheckCircle2 className="h-12 w-12 text-accent-foreground" />
         <h3 className="mt-4 font-serif text-2xl font-semibold text-foreground">Thank you</h3>
         <p className="mt-2 max-w-sm leading-relaxed text-muted-foreground">
-          Your enquiry has been received. A senior advisor will be in touch shortly to schedule your
-          consultation.
+          This form is not connected to message delivery yet. Please use the email or phone details shown on this site.
         </p>
         <Button className="mt-6 rounded-sm" onClick={() => setSubmitted(false)}>
           Send another message
@@ -98,11 +97,10 @@ export function ContactForm() {
       </div>
 
       <Button type="submit" size="lg" className="mt-6 w-full rounded-sm sm:w-auto">
-        Book a Consultation
+        Send inquiry
       </Button>
       <p className="mt-4 text-xs leading-relaxed text-muted-foreground">
-        By submitting this form you agree to be contacted about your enquiry. We treat all
-        information in strict confidence.
+        Use the email or phone details on this site to share an inquiry.
       </p>
     </form>
   )

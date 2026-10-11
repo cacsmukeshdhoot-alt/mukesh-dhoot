@@ -20,16 +20,8 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5 md:h-20">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="flex h-9 w-9 items-center justify-center rounded-sm bg-primary font-serif text-lg font-semibold text-primary-foreground">
-            M
-          </span>
-          <span className="flex flex-col leading-tight">
-            <span className="font-serif text-base font-semibold text-foreground md:text-lg">
-              Mukesh Dhoot
-            </span>
-            <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-muted-foreground">
-              &amp; Associates
-            </span>
+          <span className="font-serif text-base font-semibold text-foreground md:text-lg">
+            Mukesh Dhoot &amp; Associates
           </span>
         </Link>
 
@@ -47,7 +39,7 @@ export function SiteHeader() {
 
         <div className="hidden lg:block">
           <Button render={<Link href="/contact" />} className="rounded-sm">
-            Book a Consultation
+            Contact
           </Button>
         </div>
 
@@ -79,7 +71,7 @@ export function SiteHeader() {
               render={<Link href="/contact" onClick={() => setOpen(false)} />}
               className="mt-4 rounded-sm"
             >
-              Book a Consultation
+              Contact
             </Button>
           </nav>
         </div>

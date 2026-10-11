@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: '%s | Mukesh Dhoot & Associates',
   },
   description:
-    'Boutique advisory firm specialising in Cross-Border Business, FEMA, RBI regulations, International Trade, Treasury and transaction structuring. Enabling businesses to expand globally with confidence.',
+    'Advisory for cross-border business, FEMA, RBI matters, international trade, treasury and transaction structuring.',
   keywords: [
     'Cross Border Advisory',
     'FEMA Consultant',
@@ -48,14 +48,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Mukesh Dhoot & Associates | Cross-Border Business & FEMA Advisory',
     description:
-      'Helping businesses navigate international expansion through expert advisory on FEMA, RBI regulations, cross-border investments, trade, treasury and transaction structuring.',
+      'Advice on FEMA, RBI matters, cross-border investments, trade, treasury and transaction structuring.',
     type: 'website',
   },
 }
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: '#1c2a4a',
+  themeColor: '#494d5f',
 }
 
 export default function RootLayout({

@@ -33,12 +33,12 @@ export default function IndustriesPage() {
       <PageHero
         eyebrow="Industries"
         title="Sector fluency across the global economy"
-        description="We tailor cross-border structures to the realities of each industry — combining regulatory precision with a practical understanding of how the sector operates."
+        description="Cross-border and regulatory considerations vary by industry and transaction."
       />
 
       <section className="bg-background">
         <div className="mx-auto max-w-6xl px-5 py-16 md:py-24">
-          <Eyebrow>Sectors We Serve</Eyebrow>
+          <Eyebrow>Industry contexts</Eyebrow>
           <div className="mt-10 grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
             {industries.map((ind) => (
               <div key={ind} className="bg-card p-7">

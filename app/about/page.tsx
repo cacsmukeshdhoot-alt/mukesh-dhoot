@@ -7,7 +7,7 @@ import { audiences } from "@/lib/site-data"
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Mukesh Dhoot brings 20+ years of banking leadership at Citibank, ICICI Bank and YES BANK, with deep expertise in FEMA, RBI regulations, FDI, ODI, M&A, ECB and cross-border structuring.",
+    "Founder Mukesh Dhoot has more than 20 years of banking and cross-border transaction experience, including former leadership roles at Citibank, ICICI Bank and YES BANK.",
 }
 
 const expertise = [
@@ -17,44 +17,38 @@ const expertise = [
   "Cross-Border M&A",
   "External Commercial Borrowings",
   "Trade Finance",
-  "",
   "International Payments",
   "Cross-Border Structuring",
 ]
 
 const values = [
   {
-    title: "Strategic, not just compliant",
-    body: "We start from your commercial objective and design the regulatory path to support it — never the other way around.",
+    title: "Founder background",
+    body: "More than 20 years of founder experience in banking and cross-border transactions, including roles at Citibank, ICICI Bank and YES BANK.",
   },
   {
-    title: "Execution-led",
-    body: "Decades of hands-on transaction experience mean our advice is built to be executed, not just filed.",
+    title: "Areas of advisory",
+    body: "Advice on FEMA, RBI, FDI, ODI, M&A, ECB, international trade and cross-border structuring matters.",
   },
   {
-    title: "Senior engagement",
-    body: "You work directly with senior advisors who have sat on the bank side of these transactions.",
-  },
-  {
-    title: "Discreet & trusted",
-    body: "We operate as a long-term trusted advisor, with the confidentiality that sensitive matters demand.",
+    title: "Bank and transaction coordination",
+    body: "Experience coordinating with banks, treasury teams and trade teams, where relevant.",
   },
 ]
-
 export default function AboutPage() {
   return (
     <>
       <PageHero
         eyebrow="About the Firm"
-        title="Enabling businesses to expand globally with confidence"
-        description="Mukesh Dhoot & Associates is a boutique advisory firm combining deep regulatory command with real banking and transaction experience across cross-border business."
+        title="Founder experience in cross-border banking"
+        description="Founder Mukesh Dhoot has more than 20 years of banking and cross-border transaction experience. The firm provides advice on FEMA, RBI and related cross-border matters."
       />
 
       <section className="bg-background">
         <div className="mx-auto grid max-w-6xl items-start gap-12 px-5 py-16 md:py-24 lg:grid-cols-2">
           <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-border lg:sticky lg:top-28">
             <Image
-              src="/images/mukesh-dhoot.png"
+              src="/images/mukesh-dhoot.jpg"
               alt="Mukesh Dhoot, Founder of Mukesh Dhoot & Associates"
               fill
               className="object-cover"
@@ -64,25 +58,23 @@ export default function AboutPage() {
           <div>
             <Eyebrow>Mukesh Dhoot</Eyebrow>
             <h2 className="mt-4 font-serif text-3xl font-semibold text-foreground md:text-4xl">
-              Two decades on the bank side of cross-border business
+              More than 20 years of founder experience
             </h2>
             <div className="mt-6 space-y-4 leading-relaxed text-muted-foreground">
               <p>
                 Mukesh Dhoot has more than 20 years of experience in banking and cross-border
                 business, including former leadership roles with Citibank, ICICI Bank and YES BANK.
-                Across these institutions he led and structured complex international transactions —
-                the same transactions the firm now advises clients on.
+                His experience includes leading and structuring international transactions.
               </p>
               <p>
-                That background gives the firm a rare combination: fluency in FEMA and RBI
-                regulation, alongside a practitioner&apos;s understanding of how banks, treasury
-                desks and trade teams actually operate. The result is advice that is both compliant
-                and commercially executable.
+                His background includes work involving FEMA and RBI regulations and familiarity with
+                how banks, treasury desks and trade teams operate. The firm offers advice on related
+                matters, with scope based on applicable requirements and the agreed engagement.
               </p>
               <p>
-                The firm is positioned as a strategic advisor rather than only a compliance
-                consultant — helping clients execute international business confidently, not merely
-                satisfy a filing requirement.
+                The firm provides advisory services on cross-border transactions and related regulatory
+                matters. Support for a particular matter depends on its requirements and the agreed
+                engagement.
               </p>
             </div>
 
@@ -104,9 +96,9 @@ export default function AboutPage() {
       <section className="border-t border-border bg-muted/40">
         <div className="mx-auto max-w-6xl px-5 py-16 md:py-24">
           <div className="max-w-2xl">
-            <Eyebrow>What Guides Us</Eyebrow>
+            <Eyebrow>Areas of advisory</Eyebrow>
             <h2 className="mt-4 font-serif text-3xl font-semibold text-foreground md:text-4xl">
-              A boutique firm with a global standard
+              Founder background and areas of advisory
             </h2>
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
@@ -123,9 +115,9 @@ export default function AboutPage() {
       <section className="bg-background">
         <div className="mx-auto max-w-6xl px-5 py-16 md:py-24">
           <div className="max-w-2xl">
-            <Eyebrow>Who We Serve</Eyebrow>
+            <Eyebrow>Common service contexts</Eyebrow>
             <h2 className="mt-4 font-serif text-3xl font-semibold text-foreground md:text-4xl">
-              Trusted across the cross-border ecosystem
+              Cross-border business and investment matters
             </h2>
           </div>
           <div className="mt-10 flex flex-wrap gap-3">

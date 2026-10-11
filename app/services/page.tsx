@@ -6,7 +6,7 @@ import { services } from "@/lib/site-data"
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "FEMA Advisory, Cross-Border M&A, International Trade, Treasury & FX, Cross-Border Payments, RBI Compliance, NRI, Startup & Investor, GCC and Banking advisory.",
+    "Cross-border advice covering FEMA, M&A, international trade, payments, RBI filings, NRI, startup and banking matters.",
 }
 
 export default function ServicesPage() {
@@ -14,8 +14,8 @@ export default function ServicesPage() {
     <>
       <PageHero
         eyebrow="Advisory Services"
-        title="Ten focused practices for global business"
-        description="From FEMA structuring and cross-border M&A to treasury, payments and RBI compliance — a complete advisory toolkit for international expansion."
+        title="Cross-border advisory services"
+        description="Advice on FEMA, cross-border M&A, treasury, payments and other cross-border business matters, subject to the agreed scope."
       />
 
       <section className="bg-background">

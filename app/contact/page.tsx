@@ -16,7 +16,7 @@ function Linkedin(props: ComponentProps<"svg">) {
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Book a consultation with Mukesh Dhoot & Associates for cross-border business, FEMA, RBI, trade, treasury and transaction structuring advisory.",
+    "Contact details for general inquiries about cross-border business, FEMA, RBI, trade, treasury and transaction structuring matters.",
 }
 
 const details = [
@@ -31,8 +31,8 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact"
-        title="Talk to an expert about your next move"
-        description="Whether you are structuring an investment, planning a cross-border acquisition or navigating an RBI requirement, a senior advisor is ready to help."
+        title="Contact information"
+        description="Contact details and an inquiry form for cross-border business, FEMA, RBI, trade, treasury and transaction structuring matters."
       />
 
       <section className="bg-background">
@@ -40,11 +40,11 @@ export default function ContactPage() {
           {/* Details */}
           <div>
             <h2 className="font-serif text-2xl font-semibold text-foreground md:text-3xl">
-              Book a consultation
+              Contact details
             </h2>
             <p className="mt-3 leading-relaxed text-muted-foreground">
-              Reach us directly or send an enquiry using the form. We respond to every genuine
-              enquiry personally.
+              Use the contact details below or the inquiry form for general questions.
+              
             </p>
 
             <ul className="mt-8 space-y-4">
