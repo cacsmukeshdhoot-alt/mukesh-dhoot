@@ -21,7 +21,7 @@ const industryNotes: Record<string, string> = {
   Retail: "FDI policy navigation and import remittance frameworks.",
   Logistics: "Trade documentation, merchant trade and cross-border payments.",
   Chemicals: "Import-export compliance and trade risk management.",
-  "Financial Services": "Regulatory structuring, treasury and FX advisory.",
+  "Financial Services": "Regulatory structuring and cross-border transaction considerations.",
   "Private Equity": "Deal structuring, funding routes and exit planning.",
   "Venture Capital": "Foreign investment instruments and portfolio compliance.",
   "Family Offices": "Global asset structuring, LRS and repatriation.",
@@ -44,7 +44,7 @@ export default function IndustriesPage() {
               <div key={ind} className="bg-card p-7">
                 <h3 className="text-lg font-semibold text-foreground">{ind}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {industryNotes[ind] ?? "Cross-border structuring, compliance and treasury advisory."}
+                  {industryNotes[ind] ?? "Cross-border structuring and applicable regulatory considerations."}
                 </p>
               </div>
             ))}

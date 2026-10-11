@@ -5,7 +5,7 @@ import { FaqsView } from "@/components/faqs-view"
 export const metadata: Metadata = {
   title: "FAQs",
   description:
-    "Answers to common questions on FDI, ODI, ECB, FEMA, international trade, merchant trade, exports, imports, cross-border payments, treasury, NRI matters, RBI approvals, compounding and reporting.",
+    "Answers to common questions on FDI, ODI, ECB, FEMA, international trade, merchant trade, exports, imports, cross-border payments, NRI matters, RBI applications, compounding and reporting.",
 }
 
 export default function FaqsPage() {
@@ -14,7 +14,7 @@ export default function FaqsPage() {
       <PageHero
         eyebrow="Frequently Asked Questions"
         title="Clear answers to cross-border questions"
-        description="A practical reference covering FDI, ODI, ECB, FEMA, trade, treasury, NRI matters, RBI approvals, compounding and reporting — in plain language."
+        description="A practical reference covering FDI, ODI, ECB, FEMA, trade, NRI matters, RBI applications, compounding and reporting — in plain language."
       />
 
       <section className="bg-background">

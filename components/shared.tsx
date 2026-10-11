@@ -2,7 +2,7 @@ import { CONTACT, approach } from "@/lib/site-data"
 
 export function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-accent-foreground">
+    <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-accent">
       <span className="h-px w-6 bg-accent" aria-hidden />
       {children}
     </span>
@@ -52,7 +52,7 @@ export function ApproachSection() {
         <div className="mt-12 grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
           {approach.map((item) => (
             <div key={item.step} className="bg-card p-7">
-              <span className="font-serif text-3xl font-semibold text-accent-foreground">
+              <span className="font-serif text-3xl font-semibold text-accent">
                 {item.step}
               </span>
               <h3 className="mt-3 text-lg font-semibold text-foreground">{item.title}</h3>

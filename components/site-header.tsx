@@ -20,7 +20,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5 md:h-20">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="font-serif text-base font-semibold text-foreground md:text-lg">
+          <span className="text-base font-semibold tracking-tight text-foreground md:text-xl">
             Mukesh Dhoot &amp; Associates
           </span>
         </Link>

@@ -95,13 +95,12 @@ export const services: Service[] = [
     icon: CreditCard,
     tagline: "Advice on cross-border payments",
     summary:
-      "Payment and collection architecture for global operations — virtual accounts, cash management, escrow and optimisation of cross-border flows.",
+      "Payment and collection architecture for global operations — virtual accounts, escrow and cross-border payment flows.",
     points: [
       "International remittances",
       "Payment structuring",
       "Collection structures",
       "Virtual accounts",
-      "Cash management",
       "Escrow solutions",
       "Cross-border payment optimisation",
       "Digital payment advisory",
@@ -222,7 +221,7 @@ export const whyChooseUs = [
   },
   {
     title: "Bank and transaction coordination",
-    body: "Experience coordinating with banks, treasury teams and trade teams, where relevant.",
+    body: "Experience coordinating with banks and trade teams, where relevant.",
   },
   {
     title: "Advice on transaction structures",
@@ -269,80 +268,90 @@ export type Insight = {
   excerpt: string
   date: string
   readTime: string
+  referenceUrl: string
+  referenceLabel: string
 }
 
 export const insights: Insight[] = [
   {
-    title: "Structuring Outbound Investment (ODI): What the New Framework Really Changes",
+    title: "Outbound Investment Under FEMA: Key Considerations",
     category: "FEMA & ODI",
     excerpt:
       "A practical walk-through of the Overseas Investment Rules and how they reshape holding structures for Indian companies going global.",
     date: "Jun 2026",
     readTime: "8 min read",
+    referenceUrl: "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12380",
+    referenceLabel: "RBI Overseas Investment Regulations",
   },
   {
-    title: "FDI Into India: Choosing Between the Automatic and Approval Routes",
+    title: "FDI Into India: Automatic and Approval Routes",
     category: "FDI",
     excerpt:
       "Sector caps, pricing guidelines and reporting — a decision framework for foreign investors entering the Indian market.",
     date: "May 2026",
     readTime: "6 min read",
+    referenceUrl: "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=11200",
+    referenceLabel: "RBI Foreign Investment Direction",
   },
   {
-    title: "External Commercial Borrowings (ECB): Getting the Structure Right",
+    title: "External Commercial Borrowings: Eligibility and Requirements",
     category: "ECB",
     excerpt:
-      "Eligible borrowers, all-in-cost ceilings and end-use restrictions explained for treasurers raising foreign debt.",
+      "Eligible borrowers, all-in-cost ceilings and end-use restrictions for raising foreign debt.",
     date: "May 2026",
     readTime: "7 min read",
+    referenceUrl: "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=11510",
+    referenceLabel: "RBI ECB and Trade Credits Direction",
   },
   {
-    title: "Merchant Trade Transactions: Compliance Without the Friction",
+    title: "Merchant Trade Transactions: RBI Requirements and Documents",
     category: "International Trade",
     excerpt:
       "How to run legitimate merchanting trade while staying inside RBI timelines and documentation requirements.",
     date: "Apr 2026",
     readTime: "5 min read",
+    referenceUrl: "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10395",
+    referenceLabel: "RBI Export Direction",
   },
   {
-    title: "Cross-Border M&A: Where Deals Get Stuck on Regulation",
+    title: "Cross-Border M&A: FEMA Considerations",
     category: "M&A",
     excerpt:
       "Deferred consideration, escrows and share swaps — the FEMA touchpoints that most often delay a close.",
     date: "Apr 2026",
     readTime: "9 min read",
+    referenceUrl: "https://m.rbi.org.in/scripts/Bs_FemaNotifications.aspx",
+    referenceLabel: "RBI FEMA notifications and amendments",
   },
   {
-    title: "Treasury Playbook: Hedging FX Risk for Exporters",
-    category: "Treasury",
-    excerpt:
-      "Forwards, options and EEFC accounts — building a hedging policy that protects margins without over-engineering.",
-    date: "Mar 2026",
-    readTime: "6 min read",
-  },
-  {
-    title: "Compounding Under FEMA: Turning a Default Into a Clean Slate",
+    title: "FEMA Compounding: Process and Considerations",
     category: "RBI",
     excerpt:
       "When to file, what to expect and how to present a compounding application that resolves past contraventions.",
     date: "Mar 2026",
     readTime: "7 min read",
+    referenceUrl: "https://www.rbi.org.in/scripts/BS_CircularIndexDisplay.aspx?Id=12838",
+    referenceLabel: "RBI compounding circular",
   },
   {
-    title: "Setting Up a GCC in India: The Cross-Border Checklist",
+    title: "Setting Up a GCC in India: Cross-Border Considerations",
     category: "GCC",
     excerpt:
-      "Entity structure, inbound funding, treasury and governance considerations for multinationals building capability centres.",
+      "Entity structure, inbound funding and governance considerations for multinationals building capability centres.",
     date: "Feb 2026",
     readTime: "8 min read",
+    referenceUrl: "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=11200",
+    referenceLabel: "RBI Foreign Investment Direction",
   },
   {
-    title: "NRI Repatriation: Moving Money Home and Abroad Correctly",
+    title: "NRI Repatriation: Accounts and Documentation",
     category: "NRI",
     excerpt:
       "NRE, NRO and FCNR accounts, the USD 1 million scheme and the documentation that keeps repatriation smooth.",
     date: "Feb 2026",
     readTime: "5 min read",
+    referenceUrl: "https://m.rbi.org.in/commonman/English/Scripts/FAQs.aspx?Id=3",
+    referenceLabel: "RBI accounts FAQ for non-residents",
   },
 ]
 
@@ -355,7 +364,6 @@ export const insightCategories = [
   "FEMA Updates",
   "International Trade Insights",
   "Cross-border Trends",
-  "Treasury Updates",
   "M&A Insights",
 ]
 
@@ -371,7 +379,7 @@ export const faqs: Faq[] = [
 
   // ODI
   { group: "ODI", q: "What is ODI?", a: "Overseas Direct Investment is investment by an Indian entity or resident individual in a foreign entity, through equity, loans or guarantees, governed by the Overseas Investment Rules and Regulations." },
-  { group: "ODI", q: "What is the difference between ODI and OPI?", a: "ODI generally involves control or strategic stake and unlisted equity, while Overseas Portfolio Investment (OPI) covers investment in listed foreign securities without control. The route and reporting differ for each." },
+  { group: "ODI", q: "What is the difference between ODI and OPI?", a: "ODI generally involves control or an investment in an unlisted foreign entity, while Overseas Portfolio Investment (OPI) covers specified investments without control. The route and reporting differ for each." },
   { group: "ODI", q: "What approvals are needed for outbound investment?", a: "Most ODI is under the automatic route within financial commitment limits. Approval route transactions and certain structures require prior RBI approval, depending on current requirements and the transaction structure." },
   { group: "ODI", q: "What is the Annual Performance Report (APR)?", a: "The APR is an annual filing that Indian investors must submit for each foreign entity in which they hold ODI, based on audited financials, reporting performance and repatriations." },
   { group: "ODI", q: "Can an Indian resident individual make ODI?", a: "Yes, resident individuals can make ODI within the Liberalised Remittance Scheme limit, subject to conditions on the nature of the foreign entity and its activities." },
@@ -408,13 +416,8 @@ export const faqs: Faq[] = [
 
   // Cross-border payments
   { group: "Cross-Border Payments", q: "How can I optimise cross-border payments?", a: "By consolidating flows, using virtual accounts and appropriate collection structures, and timing conversions to reduce cost and FX exposure — all within regulatory limits." },
-  { group: "Cross-Border Payments", q: "What is a virtual account and how does it help?", a: "Virtual accounts are reference accounts that help identify and reconcile incoming international payments automatically, improving cash management for businesses with many counterparties." },
+  { group: "Cross-Border Payments", q: "What is a virtual account and how does it help?", a: "Virtual accounts are reference accounts that help identify and reconcile incoming international payments automatically for businesses with many counterparties." },
   { group: "Cross-Border Payments", q: "Can escrow be used in cross-border deals?", a: "Yes, escrow arrangements are commonly used in M&A and trade to secure deferred consideration and performance obligations, subject to FEMA conditions on the escrow structure." },
-
-  // Treasury
-  { group: "Treasury", q: "What is FX risk management?", a: "It is the process of identifying, measuring and hedging exposure to currency movements using instruments such as forwards and options, aligned to a documented treasury policy." },
-  { group: "Treasury", q: "Should my company hedge with forwards or options?", a: "Forwards lock in a rate at low cost but remove upside, while options provide protection with flexibility at a premium. The right mix depends on your exposure profile and risk appetite." },
-  { group: "Treasury", q: "What is an FCNR account?", a: "A Foreign Currency Non-Resident (Bank) account is a term deposit held in foreign currency, protecting NRIs from exchange rate movements on their deposits." },
 
   // NRI
   { group: "NRI", q: "What is the difference between NRE and NRO accounts?", a: "NRE accounts hold foreign earnings, are fully repatriable and tax-free in India, while NRO accounts hold income earned in India, are subject to Indian tax and have repatriation limits." },

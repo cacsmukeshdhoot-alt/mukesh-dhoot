@@ -41,7 +41,7 @@ export default async function ServiceDetailPage({
         <div className="mx-auto max-w-6xl px-5 py-16 md:py-24">
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 text-sm font-medium text-primary-foreground/70 transition-colors hover:text-accent"
+            className="inline-flex items-center gap-2 text-sm font-medium text-primary-foreground/90 transition-colors hover:text-secondary"
           >
             <ArrowLeft className="h-4 w-4" /> All Services
           </Link>
@@ -75,7 +75,7 @@ export default async function ServiceDetailPage({
                   key={point}
                   className="flex items-start gap-3 rounded-sm border border-border bg-card px-4 py-3 text-sm text-foreground"
                 >
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent-foreground" />
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                   {point}
                 </li>
               ))}
@@ -95,7 +95,7 @@ export default async function ServiceDetailPage({
                       className="group flex items-center justify-between gap-2 border-b border-border py-3 text-sm font-medium text-foreground last:border-0"
                     >
                       {o.title}
-                      <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-colors group-hover:text-accent-foreground" />
+                      <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-colors group-hover:text-accent" />
                     </Link>
                   </li>
                 ))}

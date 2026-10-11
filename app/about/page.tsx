@@ -32,7 +32,7 @@ const values = [
   },
   {
     title: "Bank and transaction coordination",
-    body: "Experience coordinating with banks, treasury teams and trade teams, where relevant.",
+    body: "Experience coordinating with banks and trade teams, where relevant.",
   },
 ]
 export default function AboutPage() {
@@ -46,13 +46,21 @@ export default function AboutPage() {
 
       <section className="bg-background">
         <div className="mx-auto grid max-w-6xl items-start gap-12 px-5 py-16 md:py-24 lg:grid-cols-2">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-border lg:sticky lg:top-28">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-lg border border-border bg-white lg:sticky lg:top-28">
             <Image
               src="/images/mukesh-dhoot.jpg"
               alt="Mukesh Dhoot, Founder of Mukesh Dhoot & Associates"
               fill
-              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              quality={100}
+              className="object-contain"
             />
+            <div className="absolute bottom-4 left-4 max-w-[235px] rounded-2xl border border-border bg-white/95 p-4 shadow-lg backdrop-blur-sm sm:bottom-5 sm:left-5 sm:p-5">
+              <p className="font-serif text-3xl font-semibold leading-none text-foreground">20+ years</p>
+              <p className="mt-2 text-sm font-medium leading-snug text-foreground">
+                Founder experience in banking and cross-border transactions
+              </p>
+            </div>
           </div>
 
           <div>
@@ -68,7 +76,7 @@ export default function AboutPage() {
               </p>
               <p>
                 His background includes work involving FEMA and RBI regulations and familiarity with
-                how banks, treasury desks and trade teams operate. The firm offers advice on related
+                how banks and trade teams operate. The firm offers advice on related
                 matters, with scope based on applicable requirements and the agreed engagement.
               </p>
               <p>
@@ -84,7 +92,7 @@ export default function AboutPage() {
             <ul className="mt-5 grid gap-3 sm:grid-cols-2">
               {expertise.map((item) => (
                 <li key={item} className="flex items-start gap-2.5 text-sm text-foreground">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent-foreground" />
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                   {item}
                 </li>
               ))}

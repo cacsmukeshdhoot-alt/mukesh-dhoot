@@ -49,23 +49,23 @@
 
 :root {
   color-scheme: light;
-  --background: #e5eaf5;
-  --foreground: #494d5f;
+  --background: #ffffff;
+  --foreground: #303544;
   --card: #ffffff;
-  --card-foreground: #494d5f;
+  --card-foreground: #303544;
   --popover: #ffffff;
-  --popover-foreground: #494d5f;
+  --popover-foreground: #303544;
   --primary: #494d5f;
-  --primary-foreground: #e5eaf5;
+  --primary-foreground: #ffffff;
   --secondary: #d0bdf4;
-  --secondary-foreground: #494d5f;
+  --secondary-foreground: #302640;
   --muted: #a0d2eb;
-  --muted-foreground: #5d6272;
+  --muted-foreground: #4b5262;
   --accent: #8458b3;
   --accent-foreground: #ffffff;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: #cbd3e2;
-  --input: #cbd3e2;
+  --border: #c4ccda;
+  --input: #b8c2d2;
   --ring: #8458b3;
   --chart-1: #494d5f;
   --chart-2: #8458b3;
@@ -73,10 +73,10 @@
   --chart-4: #d0bdf4;
   --chart-5: #5d6272;
   --radius: 1rem;
-  --sidebar: #e5eaf5;
-  --sidebar-foreground: #494d5f;
+  --sidebar: #f4f7fb;
+  --sidebar-foreground: #303544;
   --sidebar-primary: #494d5f;
-  --sidebar-primary-foreground: #e5eaf5;
+  --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #8458b3;
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: #cbd3e2;
@@ -166,23 +166,23 @@
 
 /* Soft, rounded surfaces and controls throughout the site. */
 :where([class*="rounded-"]) {
-  box-shadow: 0 8px 24px rgba(73, 77, 95, 0.12);
+  box-shadow: 0 10px 28px rgba(48, 53, 68, 0.12);
 }
 
 button,
 [data-slot="button"] {
   border-radius: 9999px !important;
-  box-shadow: 0 5px 16px rgba(73, 77, 95, 0.2);
+  box-shadow: 0 6px 18px rgba(48, 53, 68, 0.22);
 }
 
 input,
 select,
 textarea {
   border-radius: 1rem !important;
-  box-shadow: 0 3px 12px rgba(73, 77, 95, 0.1);
+  box-shadow: 0 3px 12px rgba(48, 53, 68, 0.12);
 }
 
 :where(.bg-card, .bg-secondary) {
   border-radius: 1rem;
-  box-shadow: 0 8px 24px rgba(73, 77, 95, 0.12);
+  box-shadow: 0 10px 28px rgba(48, 53, 68, 0.12);
 }

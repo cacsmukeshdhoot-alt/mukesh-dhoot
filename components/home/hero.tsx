@@ -31,11 +31,11 @@ export function Hero() {
         </h1>
 
         <p className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-primary-foreground/80 md:text-lg">
-          Advice on FEMA, RBI regulations, cross-border investment, international trade, treasury and
+          Advice on FEMA, RBI regulations, cross-border investment, international trade and
           transaction structuring.
         </p>
 
-        <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+        <div className="mt-9 flex flex-col gap-4 sm:flex-row">
           <Button
             render={<Link href="/contact" />}
             size="lg"

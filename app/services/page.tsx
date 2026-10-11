@@ -15,7 +15,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Advisory Services"
         title="Cross-border advisory services"
-        description="Advice on FEMA, cross-border M&A, treasury, payments and other cross-border business matters, subject to the agreed scope."
+        description="Advice on FEMA, cross-border M&A, payments and other cross-border business matters, subject to the agreed scope."
       />
 
       <section className="bg-background">

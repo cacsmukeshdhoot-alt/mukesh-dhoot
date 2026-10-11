@@ -6,7 +6,7 @@ import { insights, insightCategories } from "@/lib/site-data"
 export const metadata: Metadata = {
   title: "Insights",
   description:
-    "Articles, case studies and regulatory updates on FEMA, RBI circulars, FDI, ODI, ECB, international trade, treasury and cross-border M&A.",
+    "Articles and selected regulatory references on FEMA, RBI directions, FDI, ODI, ECB, international trade and cross-border M&A.",
 }
 
 export default function InsightsPage() {
@@ -17,7 +17,7 @@ export default function InsightsPage() {
       <PageHero
         eyebrow="Knowledge Centre"
         title="Insights on cross-border business and regulation"
-        description="Practical perspectives on FEMA, RBI regulations, international trade, treasury and M&A — written in plain language for decision-makers."
+        description="Practical perspectives on FEMA, RBI regulations, international trade and M&A, alongside links to official reference material."
       />
 
       <section className="bg-background">
@@ -36,7 +36,7 @@ export default function InsightsPage() {
           {/* Featured */}
           <article className="group mt-12 grid gap-8 rounded-lg border border-border bg-primary p-8 text-primary-foreground md:grid-cols-2 md:p-12">
             <div>
-              <span className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+              <span className="text-xs font-semibold uppercase tracking-[0.16em] text-secondary">
                 Featured — {featured.category}
               </span>
               <h2 className="mt-4 text-balance font-serif text-2xl font-semibold leading-snug md:text-3xl">
@@ -49,8 +49,17 @@ export default function InsightsPage() {
                 <span>{featured.date}</span>
                 <span aria-hidden>•</span>
                 <span>{featured.readTime}</span>
-                <ArrowUpRight className="ml-auto h-5 w-5 text-accent" />
+                <ArrowUpRight className="ml-auto h-5 w-5 text-secondary" />
               </div>
+              <a
+                href={featured.referenceUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-secondary underline-offset-4 hover:underline"
+              >
+                Official reference: {featured.referenceLabel}
+                <ArrowUpRight className="h-4 w-4" />
+              </a>
             </div>
           </article>
 
@@ -59,9 +68,9 @@ export default function InsightsPage() {
             {rest.map((post) => (
               <article
                 key={post.title}
-                className="group flex flex-col rounded-lg border border-border bg-card p-6 transition-colors hover:bg-secondary"
+                className="group flex flex-col rounded-lg border border-border bg-card p-6 transition-colors hover:bg-secondary/50"
               >
-                <span className="text-xs font-semibold uppercase tracking-[0.16em] text-accent-foreground">
+                <span className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
                   {post.category}
                 </span>
                 <h3 className="mt-3 text-pretty font-serif text-lg font-semibold leading-snug text-foreground">
@@ -74,17 +83,39 @@ export default function InsightsPage() {
                   <span>{post.date}</span>
                   <span aria-hidden>•</span>
                   <span>{post.readTime}</span>
-                  <ArrowUpRight className="ml-auto h-4 w-4 text-muted-foreground transition-colors group-hover:text-accent-foreground" />
                 </div>
+                <a
+                  href={post.referenceUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-accent underline-offset-4 hover:underline"
+                >
+                  Official reference: {post.referenceLabel}
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
               </article>
             ))}
           </div>
 
-          <div className="mt-12 rounded-lg border border-dashed border-border bg-muted/40 p-8 text-center">
-            <Eyebrow>Stay Informed</Eyebrow>
-            <p className="mx-auto mt-4 max-w-xl text-pretty leading-relaxed text-muted-foreground">
-              New articles, regulatory updates and RBI circular summaries are published regularly.
-              Subscribe by writing to us and we&apos;ll keep you informed.
+          <div className="mt-12 rounded-2xl border border-border bg-muted/50 p-7 sm:p-9">
+            <Eyebrow>Recent RBI updates</Eyebrow>
+            <h2 className="mt-4 font-serif text-2xl font-semibold text-foreground">
+              Foreign exchange notifications
+            </h2>
+            <p className="mt-3 max-w-2xl leading-relaxed text-muted-foreground">
+              Browse official updates to FEMA regulations, including amendments on cross-border
+              mergers, exports and reporting requirements.
+            </p>
+            <a
+              href="https://m.rbi.org.in/scripts/Bs_FemaNotifications.aspx"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-full bg-accent px-5 py-2 text-sm font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent/90"
+            >
+              View RBI notifications and updates <ArrowUpRight className="h-4 w-4" />
+            </a>
+            <p className="mt-4 text-xs text-muted-foreground">
+              Official RBI directions and notices may change; check the current source for each matter.
             </p>
           </div>
         </div>

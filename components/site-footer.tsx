@@ -13,7 +13,7 @@ export function SiteFooter() {
               <span className="font-serif text-lg font-semibold">Mukesh Dhoot &amp; Associates</span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-primary-foreground/70">
-              Advisory services related to cross-border business, FEMA and treasury matters.
+              Advisory services related to cross-border business, FEMA and RBI matters.
             </p>
           </div>
 

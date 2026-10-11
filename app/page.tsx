@@ -16,18 +16,20 @@ export default function HomePage() {
       <section className="bg-background">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:py-24 lg:grid-cols-2">
           <div className="relative">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-white">
               <Image
                 src="/images/mukesh-dhoot.jpg"
                 alt="Mukesh Dhoot, Founder of Mukesh Dhoot & Associates"
                 fill
-                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                quality={100}
+                className="object-contain"
               />
             </div>
-            <div className="absolute -bottom-6 -right-4 hidden max-w-[220px] rounded-2xl border border-border bg-card p-5 shadow-sm sm:block">
-              <p className="font-serif text-3xl font-semibold text-accent-foreground">20+</p>
-              <p className="mt-1 text-sm leading-snug text-muted-foreground">
-                years of founder experience in banking and cross-border transactions
+            <div className="absolute bottom-4 left-4 max-w-[235px] rounded-2xl border border-border bg-white/95 p-4 shadow-lg backdrop-blur-sm sm:bottom-5 sm:left-5 sm:p-5">
+              <p className="font-serif text-3xl font-semibold leading-none text-foreground">20+ years</p>
+              <p className="mt-2 text-sm font-medium leading-snug text-foreground">
+                Founder experience in banking and cross-border transactions
               </p>
             </div>
           </div>
@@ -43,17 +45,17 @@ export default function HomePage() {
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               The firm offers advice on FEMA, RBI regulations, FDI, ODI, M&amp;A, ECB, trade finance,
-              treasury, international payments and cross-border structuring.
+              international payments and cross-border structuring.
             </p>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">
               {[
                 "FEMA and RBI matters",
                 "FDI, ODI and ECB",
                 "Cross-border M&A",
-                "Trade, treasury and payments",
+                "Trade and payments",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2.5 text-sm text-foreground">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent-foreground" />
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                   {item}
                 </li>
               ))}
@@ -102,7 +104,7 @@ export default function HomePage() {
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {whyChooseUs.map((item, i) => (
               <div key={item.title} className="rounded-2xl border border-border bg-card p-6">
-                <span className="font-serif text-sm font-semibold text-accent-foreground">
+                <span className="font-serif text-sm font-semibold text-accent">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <h3 className="mt-2 text-lg font-semibold text-foreground">{item.title}</h3>
@@ -162,7 +164,7 @@ export default function HomePage() {
                 key={post.title}
                 className="flex flex-col rounded-lg border border-border bg-card p-6"
               >
-                <span className="text-xs font-semibold uppercase tracking-[0.16em] text-accent-foreground">
+                <span className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
                   {post.category}
                 </span>
                 <h3 className="mt-3 text-pretty font-serif text-lg font-semibold leading-snug text-foreground">

@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import type { ComponentProps } from "react"
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
 import { PageHero } from "@/components/shared"
-import { ContactForm } from "@/components/contact-form"
 import { CONTACT } from "@/lib/site-data"
 
 function Linkedin(props: ComponentProps<"svg">) {
@@ -16,7 +15,7 @@ function Linkedin(props: ComponentProps<"svg">) {
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact details for general inquiries about cross-border business, FEMA, RBI, trade, treasury and transaction structuring matters.",
+    "Contact details for cross-border business, FEMA, RBI, trade and transaction structuring matters.",
 }
 
 const details = [
@@ -32,19 +31,18 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Contact information"
-        description="Contact details and an inquiry form for cross-border business, FEMA, RBI, trade, treasury and transaction structuring matters."
+        description="Contact details for cross-border business, FEMA, RBI, trade and transaction structuring matters."
       />
 
       <section className="bg-background">
-        <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 md:py-24 lg:grid-cols-[1fr_1.2fr]">
+        <div className="mx-auto max-w-4xl px-5 py-16 md:py-24">
           {/* Details */}
           <div>
             <h2 className="font-serif text-2xl font-semibold text-foreground md:text-3xl">
               Contact details
             </h2>
             <p className="mt-3 leading-relaxed text-muted-foreground">
-              Use the contact details below or the inquiry form for general questions.
-              
+              Use the contact details below for general questions.
             </p>
 
             <ul className="mt-8 space-y-4">
@@ -105,10 +103,6 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Form */}
-          <div>
-            <ContactForm />
-          </div>
         </div>
       </section>
     </>

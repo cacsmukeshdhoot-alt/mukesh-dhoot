@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: '%s | Mukesh Dhoot & Associates',
   },
   description:
-    'Advisory for cross-border business, FEMA, RBI matters, international trade, treasury and transaction structuring.',
+    'Advisory for cross-border business, FEMA, RBI matters, international trade and transaction structuring.',
   keywords: [
     'Cross Border Advisory',
     'FEMA Consultant',
@@ -34,7 +34,6 @@ export const metadata: Metadata = {
     'FDI Consultant',
     'Cross Border M&A',
     'RBI Advisory',
-    'Treasury Advisory',
     'Trade Advisory',
     'Merchant Trade Consultant',
     'Cross Border Payments',
@@ -42,13 +41,12 @@ export const metadata: Metadata = {
     'Foreign Investment Consultant',
     'Corporate FEMA Consultant',
     'Export Import Consultant',
-    'International Treasury Consultant',
   ],
   generator: 'v0.app',
   openGraph: {
     title: 'Mukesh Dhoot & Associates | Cross-Border Business & FEMA Advisory',
     description:
-      'Advice on FEMA, RBI matters, cross-border investments, trade, treasury and transaction structuring.',
+      'Advice on FEMA, RBI matters, cross-border investments, trade and transaction structuring.',
     type: 'website',
   },
 }
